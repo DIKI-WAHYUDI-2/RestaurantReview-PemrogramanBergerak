@@ -16,14 +16,15 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ViewHolder
 
     private final ArrayList<String> listReview;
 
-    public ReviewAdapter(ArrayList<String> listReview) {
+    public ReviewAdapter(ArrayList<String> listReview)
+    {
         this.listReview = listReview;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_review    , viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_review,viewGroup,false);
         return new ViewHolder(view);
     }
 
